@@ -34,10 +34,9 @@ poetry run streamlit run app.py
 
 ### Funcionalidades
 
-* **Autenticação JWT:** implementa login e registro de usuários, protegendo o acesso ao endpoint de predição através de JWT.
-* **Predição em tempo real:** permite a submissão interativa das quatro características da Iris (**comprimento/largura da sépala/pétala**) para serem processadas por um modelo de Machine Learning via API externa.
-* **Histórico de predições:** após o login, o usuário pode visualizar e paginar o histórico de predições, que é persistido no banco de dados da API.
-* **Documentação**: oferece uma interface Swagger UI (via Flasgger) no endpoint /apidocs, permitindo exploração e teste de todos os endpoints da API diretamente pelo navegador.
+* **Autenticação:** implementa interface para login e registro de usuários.
+* **Predição:** permite a submissão interativa das quatro características da Iris (**comprimento/largura da sépala/pétala**) para serem processadas por um modelo de Machine Learning via API externa e retorna a classe predita.
+* **Histórico de predições:** o usuário pode visualizar e paginar o histórico de predições persistido no banco de dados da API.
 
 ### Tecnologias
 
