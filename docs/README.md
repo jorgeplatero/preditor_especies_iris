@@ -4,13 +4,13 @@ Este é um aplicativo web interativo construído com **Streamlit** que atua como
 
 ## Funcionalidades
 
-* **Autenticação JWT:** implementa **Login** e **Registro** de usuários, protegendo o acesso ao endpoint de predição através de **Tokens Web JSON (JWT)**.
-* **Predição em Tempo Real:** permite a submissão interativa das quatro características da Iris (**Comprimento/Largura da Sépala/Pétala**) para serem processadas por um modelo de Machine Learning via API externa.
-* **Histórico de Predições:** após o login, o usuário pode visualizar e paginar (*limit* e *offset*) seu histórico de predições, que é persistido no banco de dados da API.
+* **Autenticação JWT:** implementa **login** e **registro** de usuários, protegendo o acesso ao endpoint de predição através de **JWT**.
+* **Predição em tempo real:** permite a submissão interativa das quatro características da Iris (**comprimento/largura da sépala/pétala**) para serem processadas por um modelo de Machine Learning via API externa.
+* **Histórico de predições:** após o login, o usuário pode visualizar e paginar (*limit* e *offset*) o histórico de predições, que é persistido no banco de dados da API.
 
 ## Arquitetura e Tecnologias
 
-A aplicação atua como um frontend (cliente) que se comunica com um backend (API) externo.
+A aplicação atua como cliente que se comunica com a API externa.
 
 | Componente | Tecnologia | Versão (Especificada) | Descrição |
 | :--- | :--- | :--- | :--- |
@@ -22,7 +22,7 @@ A aplicação atua como um frontend (cliente) que se comunica com um backend (AP
 
 ### URL da API
 
-O aplicativo está configurado para interagir com o *backend* no Vercel:
+O aplicativo está configurado para interagir com o API em produção no Vercel:
 
 `https://postech-flask-ml-fase-1.vercel.app`
 
