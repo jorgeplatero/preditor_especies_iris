@@ -28,7 +28,7 @@ O aplicativo está configurado para interagir com o *backend* no Vercel:
 
 ---
 
-## 🛠️ Configuração e Execução Local
+## 🛠️ Configuração e Execução
 
 ### 1. Pré-requisitos
 
@@ -43,7 +43,7 @@ git clone [URL_DO_SEU_REPOSITÓRIO]
 cd preditor-iris
 ```
 
-2. **Instalação de Dependências:** O Poetry lerá o `pyproject.toml` e instalará todas as dependências no ambiente virtual.
+2. **Instalação de Dependências:** o Poetry lerá o `pyproject.toml` e instalará todas as dependências no ambiente virtual.
 
 ```bash
 poetry install
